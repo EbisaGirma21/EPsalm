@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+:root {
+  --primary-color: #007af3;
+}
+
+body {
+  background: #f2f2f2;
+  margin: 0;
+  font-family: "Poppins";
+}
+
+.navbar {
+  background: white;
+  padding: 1em;
+}
+
+.navbar .logo {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.8em;
+  color: black;
+}
+
+.navbar .logo span {
+  color: var(--primary-color);
+}
+
+.navbar nav {
+  display: none;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.navbar .mobile-menu {
+  cursor: pointer;
+}
+
+a {
+  color: #444444;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+.super {
+  text-align: center;
+}
+
+.ads {
+  cursor: pointer;
+  color: green;
+  width: 100%;
+}
+
+.Logingin {
+  width: 80%;
+  padding: 1em;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  margin-left: 20%;
+  margin-top: 10%;
+  box-sizing: border-box;
+  border-radius: 0.3em;
+
+  -webkit-box-sizing: border-box;
+}
+input {
+  width: 80%;
+  padding: 1em;
+  margin-bottom: 1em;
+  box-sizing: border-box;
+  border-radius: 0.3em;
+  border: 1px solid gray;
+  -webkit-box-sizing: border-box;
+}
+button {
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  width: 20%;
+  margin-left: 30%;
+  padding: 0.8em;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 66%;
+  right: 0;
+  top: 0;
+  background: #20272e;
+  height: 100vh;
+  padding: 1em;
+}
+
+nav ul.first-nav {
+  margin-top: 5em;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.5em;
+  font-size: 1.3em;
+  text-align: right;
+}
+
+nav li a:hover {
+  font-weight: bold;
+}
+
+.mobile-menu-exit {
+  float: right;
+  margin: 0.5em;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu,
+  .mobile-menu-exit {
+    display: none;
+  }
+  .navbar container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 180px auto;
+    grid-template-columns: 180px auto;
+    -webkit-box-pack: unset;
+    -ms-flex-pack: unset;
+    justify-content: unset;
+  }
+  .Logingin {
+    width: 60%;
+    padding: 1em;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    margin-left: 35%;
+    margin-top: 10%;
+    box-sizing: border-box;
+    border-radius: 0.3em;
+
+    -webkit-box-sizing: border-box;
+  }
+  input {
+    width: 50%;
+    padding: 1em;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+    border-radius: 0.3em;
+    border: 1px solid gray;
+    -webkit-box-sizing: border-box;
+  }
+  button {
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+    width: 15%;
+    margin-left: 20%;
+    padding: 0.8em;
+  }
+  .navbar nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    background: none;
+    position: unset;
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+
+  .navbar nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar nav a {
+    color: black;
+    font-size: unset;
+    padding: 1em 1em;
+  }
+  .navbar nav ul.first-nav {
+    margin-top: -0.8em;
+    margin-left: 4em;
+  }
+  .navbar nav ul.second-nav {
+    margin: -0.8em;
+  }
+  .navbar nav li.current a {
+    font-weight: bold;
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    padding: 0.2em 1.3em;
+    font-size: 1.2em;
+    display: inline-block;
+    margin-top: 0.7em;
+  }
+  .navbar nav li.psalms a {
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    padding: 0.2em 1em;
+    font-size: 1.2em;
+    margin-left: 1em;
+    display: inline-block;
+    margin-top: 0.7em;
+  }
+  .navbar nav li.contact a {
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    padding: 0.2em 1em;
+    font-size: 1.2em;
+    margin-left: 1em;
+    display: inline-block;
+    margin-top: 0.7em;
+  }
+  .navbar nav li.about-cta a {
+    color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+    border-radius: 5em;
+    margin-left: 1em;
+  }
+  .navbar nav li.about-cta a:hover {
+    background: var(--primary-color);
+    color: white;
+  }
+  .navbar nav li.login-cta a {
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    padding: 0.1em 0.6em;
+    font-size: 1.2em;
+    border-radius: 3em;
+    display: inline-block;
+    margin-top: 1em;
+    margin-left: 1em;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .container {
+    width: 1080px;
+    margin: 0 auto;
+  }
+  .Logingin {
+    width: 60%;
+    padding: 1em;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    margin-left: 35%;
+    margin-top: 10%;
+    box-sizing: border-box;
+    border-radius: 0.3em;
+
+    -webkit-box-sizing: border-box;
+  }
+  input {
+    width: 50%;
+    padding: 1em;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+    border-radius: 0.3em;
+    border: 1px solid gray;
+    -webkit-box-sizing: border-box;
+  }
+  button {
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+    width: 10%;
+    margin-left: 20%;
+    padding: 0.8em;
+  }
+  section {
+    padding: 10em 4em;
+  }
+
+  .super.container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    text-align: left;
+  }
+}
+/*# sourceMappingURL=main.css.map */

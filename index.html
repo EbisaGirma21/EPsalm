@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Epsalms</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body ">
+    <div class="navbar">
+      <div class="container">
+        <a class="logo" href="#">E<span>psalms</span></a>
+        <img
+          id="mobile-cta"
+          class="mobile-menu"
+          src="images/menu.svg"
+          alt="Open Navigation"
+        />
+        <nav>
+          <img
+            id="mobile-exit"
+            class="mobile-menu-exit"
+            src="images/exit.svg"
+            alt="Close Navigation"
+          />
+          <ul class="first-nav">
+            <li class="current"><a href="#">Home</a></li>
+            <li class="psalms"><a href="Psalms/psalms.html">Psalms</a></li>
+            <li class="contact"><a href="#">Contact</a></li>
+          </ul>
+          <ul class="second-nav">
+            <li class="about-cta"><a href="#">About</a></li>
+            <li class="login-cta"><a href="/Login/login.html">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <section class="super">
+      <div class="container">
+        <div class="bible">
+          <p class="verses">I will sing to yahweh</p>
+          <h1>Because He Has Been Good To Me</h1>
+          <p class="number">Psalms 13:6</p>
+          <div class="songs-cta">
+            <a href="#" class="primary-cta">GetFree song</a>
+          </div>
+        </div>
+        <img src="images/playlist.svg" class="play-img" alt="PlayList" />
+      </div>
+      <div class="ads">
+        <audio controls>
+          <source src="SOVEREIGN.m4a" type="audio/ogg" />
+          <source src="SOVEREIGN.m4a" type="audio/mpeg" />
+        </audio>
+      </div>
+    </section>
+    <section class="last-cta">
+      <div class="container">
+        <div class="">
+          <form action="">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" />
+            <label for="name">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <input type="submit" class="send-message" value="Send" />
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
